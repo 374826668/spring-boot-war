@@ -7,6 +7,7 @@ package com.peng.springbootwar.util.servlet;/**
  */
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,6 +18,7 @@ import java.io.IOException;
  * @author Li.peng
  *@create 2018-09-19 14:49
  */
+@WebServlet(urlPatterns = "/peng",name = "custom")
 public class CustomServlet extends HttpServlet {
     private static final long serialVersionUID = -7157745530239369401L;
 

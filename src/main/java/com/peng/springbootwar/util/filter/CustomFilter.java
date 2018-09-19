@@ -7,6 +7,7 @@ package com.peng.springbootwar.util.filter;/**
  */
 
 import javax.servlet.*;
+import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
 
 /**
@@ -14,6 +15,7 @@ import java.io.IOException;
  * @author Li.peng
  *@create 2018-09-19 16:01
  */
+@WebFilter(urlPatterns = "/*")
 public class CustomFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

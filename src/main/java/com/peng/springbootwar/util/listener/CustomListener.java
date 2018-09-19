@@ -8,12 +8,14 @@ package com.peng.springbootwar.util.listener;/**
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
 /**
  *描述：listener
  * @author Li.peng
  *@create 2018-09-19 16:17
  */
+@WebListener
 public class CustomListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
