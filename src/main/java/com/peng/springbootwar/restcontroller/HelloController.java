@@ -17,5 +17,10 @@ public class HelloController {
         return "index";
     }
 
+    @RequestMapping("exception")
+    public String exception(ModelMap map) {
+        throw new RuntimeException("测试异常");
+    }
+
 
 }
