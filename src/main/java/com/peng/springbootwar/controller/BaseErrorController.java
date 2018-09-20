@@ -1,4 +1,4 @@
-package com.peng.springbootwar.restcontroller;/**
+package com.peng.springbootwar.controller;/**
  * Created with IntelliJ IDEA.
  *
  * @author li.peng

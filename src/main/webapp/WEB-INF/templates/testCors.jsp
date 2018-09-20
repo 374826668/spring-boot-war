@@ -11,27 +11,28 @@
     <title>testCors</title>
 </head>
     <body>
-    <h1 id="title">点击跳转测试</h1>
-    <script type="text/javascript" src="/webjars/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script>
-            $(function () {
-                $('#title').click(function () {
-                    $.ajax({
-                        url:"http://localhost:8888/app/rest/get",
-                        type:"POST",
-                        data:{
-                            name:"测试"
-                        },
-                        success:function (data,status,xhr) {
-                            console.log(data);
-                            alert(data.name);
-                        }
-                    });
-                })
+        $(function () {
+            $('#title').click(function () {
+                $.ajax({
+                    url:"http://localhost:8888/app/rest/get",
+                    type:"POST",
+                    data:{
+                        name:"测试"
+                    },
+                    success:function (data,status,xhr) {
+                        console.log(data);
+                        alert(data.name);
+                    }
+                });
             })
+        })
 
 
 
-        </script>
+    </script>
+    <h1 id="title">点击跳转测试</h1>
+
     </body>
 </html>
