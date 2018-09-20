@@ -6,9 +6,7 @@ package com.peng.springbootwar.restcontroller;/**
  * Time: 18:15
  */
 
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,7 +19,8 @@ import java.util.Map;
 @RestController
 @RequestMapping(value = "/rest")
 public class HelloRestController {
-    @RequestMapping("get")
+//    @CrossOrigin(origins = "http://localhost:1111")//细粒度处理跨域
+    @RequestMapping(value = "get", method = RequestMethod.POST)
     public Map<String,Object> get(@RequestParam String name){
         Map<String,Object> map=new HashMap<String,Object>();
         map.put("title","hello world");
