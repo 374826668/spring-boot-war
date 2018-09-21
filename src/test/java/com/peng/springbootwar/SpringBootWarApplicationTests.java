@@ -43,5 +43,4 @@ public class SpringBootWarApplicationTests {
         AEmployeeCopyEntity aEmployeeCopyEntity=pengDao.selectById(7L);
         System.out.println(aEmployeeCopyEntity.getName()+"              "+aEmployeeCopyEntity.getEmail());
     }
-
 }

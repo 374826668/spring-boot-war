@@ -18,4 +18,5 @@ public interface PengDao {
     int deleteById(Long id);
     int updateById(AEmployeeCopyEntity aEmployeeCopyEntity);
     AEmployeeCopyEntity selectById(Long id);
+//    Page<AEmployeeCopyEntity> queryForPage(int pageCurrent,int pageSize,String name);
 }
